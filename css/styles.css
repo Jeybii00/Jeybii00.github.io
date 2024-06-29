@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+
+:root {
+    --header-height: 3rem;
+    --font-semi: 600;
+    /*===== Colors =====*/
+    /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
+    /* HSL color mode */
+    --hue-color: 224;
+    --first-color: hsl(var(--hue-color), 25%, 30%);
+    --second-color: hsl(var(--hue-color), 56%, 12%);
+    /*===== Font Face =====*/
+    --body-font: "Poppins", sans-serif;
+    --big-font-size: 2rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: .938rem;
+    --smaller-font-size: .75rem;
+    /*===== Margins =====*/
+    --mb-2: 1rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+    /*===== z index =====*/
+    --z-back: -10;
+    --z-fixed: 100;
+  }
+
+  *, ::before, ::after {
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--second-color);
+  }
+
+  h1, h2, p {
+    margin: 0;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .logo{
+    font-size: var(--big-font-size);
+    color: var(--second-color);
+  }
+
+  header {
+    width: 100%;
+    padding: 0 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(146, 161, 176, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hamburger{
+    display: none;
+}
+
+  .nav-bar ul {
+    display: flex;
+    padding: 5px;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: var(--hue-color);
+    font-size: var(--font-semi);
+    padding: 10px 15px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.nav-bar ul ul li{
+    width: 290px;
+    float: none;
+    margin-bottom: 5px;
+}
+
+.nav-bar ul li a.active{
+    color: #fff;
+    background: var(--first-color);
+}
+
+.nav-bar ul li a:hover{
+    color: #fff;
+    background: var(--first-color);
+}
+
+@media only screen and (max-width: 1320px){
+    header{
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    header{
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: var(--second-color);
+        margin: 6px 0;
+    }
+
+    .nav-bar{
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: var(--second-color);
+        transition: 0.2s;
+        overflow: hidden;
+    }
+
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar ul ul li{
+        text-align: justify;
+    }
+
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+    .nav-bar ul li a{
+        margin-bottom: 12px;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+        <header>
+            <div>
+                <h1 class="logo">Bryan</h1>
+            </div>
+
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+
+                <nav class="nav-bar">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#Home" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="#About" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#Skills" class="nav-link">Skills</a></li>
+                        <li class="nav-item"><a href="#Work" class="nav-link">Work</a></li>
+                        <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+        </header>
+
+        <!--=== Home Section ===-->
+        <main>
+
+        </main>
+
+
+
+        <script>
+            hamburger = document.querySelector(".hamburger");
+            hamburger.onclick = function () {
+                navBar = document.querySelector(".nav-bar");
+                navBar.classList.toggle("active");
+            }
+        </script>
+
+</body>
+</html>
