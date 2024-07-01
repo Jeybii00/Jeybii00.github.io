@@ -5,47 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="images/logo-modified.png">
+    <link rel="icon" type="image/x-icon" href="img/logo-modified.png">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     
         <header>
             <div>
-                <h1 class="logo">Bryan</h1>
+                <a href="index.html" class="logo">Bryan</a>
             </div>
 
-                <div class="hamburger">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
 
-                <nav class="nav-bar">
+                <nav class="nav-bar" id="nav-menu" >
                     <ul class="nav-list">
-                        <li class="nav-item"><a href="#Home" class="nav-link active">Home</a></li>
-                        <li class="nav-item"><a href="#About" class="nav-link">About</a></li>
-                        <li class="nav-item"><a href="#Skills" class="nav-link">Skills</a></li>
-                        <li class="nav-item"><a href="#Work" class="nav-link">Work</a></li>
-                        <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                        <li class="nav-item"><a href="#work" class="nav-link">Work</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                     </ul>
+
                 </nav>
         </header>
 
-        <!--=== Home Section ===-->
-        <main>
+
+        <!--===== HOME SECTION =====-->
+        <main class="main-page">
+            <section class="home bd-grid" id="home">
+                <div class="home-data">
+                    <h1 class="home-title">Hi,<br>I'am <span class="home-title-color">Bryan</span><br> Web Designer</h1>
+                </div>
+
+                <div class="home-img">
+                    <img class="avatar-img" x="50" y="60" src="img/avatar.png">
+                </div>
+
+            </section>
 
         </main>
 
 
 
-        <script>
-            hamburger = document.querySelector(".hamburger");
-            hamburger.onclick = function () {
-                navBar = document.querySelector(".nav-bar");
-                navBar.classList.toggle("active");
-            }
-        </script>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--SCROLL REVEAL-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--MAIN-->
+        <script src="js/script.js"></script>
 </body>
 </html>
