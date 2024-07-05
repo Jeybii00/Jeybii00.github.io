@@ -44,7 +44,7 @@
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title">Bryan</h1>
-            <p class="section__text__p2">Web Designer</p>
+            <div class="section__text__p2 animated-text">I'm a <span></span></div>
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./img/resume-example.pdf')">
                     Download CV
@@ -71,7 +71,7 @@
         <h1 class="title">About Me</h1>
         <div class="section-container">
             <div class="section__pic-container">
-                <img src="img/about-pic.jpg" 
+                <img src="img/avatar.png" 
                     alt="about-picture" 
                     class="about-pic"/>
             </div>
@@ -85,7 +85,7 @@
                         <p>1+ year<br /> Web/Figma Designer</p>
                     </div>
                     <div class="details-container">
-                        <img src="img/education.png" 
+                        <img src="img/education-1.png" 
                         alt="experience-picture"
                         class="icon">
                         <h3>Education</h3>
@@ -93,11 +93,14 @@
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Quis laborum ipsum, eum omnis saepe inventore error nam totam tenetur sed provident? 
-                        Atque perferendis autem error nostrum praesentium accusamus, 
-                        iste nobis nemo voluptates ipsum distinctio quaerat quisquam quis neque adipisci 
-                        sapiente consectetur quas corrupti incidunt? Totam labore deserunt itaque quaerat distinctio.</p>
+                    <p>
+                        Bonjour! As a junior web designer and frontend developer, 
+                        I am eager to contribute my creativity and technical skills to 
+                        crafting engaging and responsive websites. With a strong foundation 
+                        in HTML, CSS, and JavaScript. I am dedicated to learning and applying the latest trends in web design. 
+                        With over 1 year of experience, I specialize in translating creative concepts into functional designs. 
+                        I look forward to growing and thriving in this dynamic field!
+                    </p>
                 </div>
             </div>
         </div>
@@ -109,14 +112,14 @@
 
     <section id="experience">
         <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
+        <h1 class="title">Skills</h1>
         <div class="experience-details-container">
             <div class="about-containers">
                 <div class="details-container">
                     <h2 class="experience-sub-title">Frontend Development</h2>
                     <div class="article-container">
                         <article>
-                            <img src="img/checkmark.png" 
+                            <img src="img/check.png" 
                             alt="experience-icon" 
                             class="icon">
                             <div>
@@ -125,7 +128,7 @@
                             </div>
                         </article>
                         <article>
-                            <img src="img/checkmark.png" 
+                            <img src="img/check.png" 
                             alt="experience-icon" 
                             class="icon">
                             <div>
@@ -134,7 +137,16 @@
                             </div>
                         </article>
                         <article>
-                            <img src="img/checkmark.png" 
+                            <img src="img/check.png" 
+                            alt="experience-icon" 
+                            class="icon">
+                            <div>
+                                <h3>Bootstrap</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="img/check.png" 
                             alt="experience-icon" 
                             class="icon">
                             <div>
@@ -148,7 +160,7 @@
                     <h2 class="experience-sub-title">Web Design</h2>
                     <div class="article-container">
                         <article>
-                            <img src="img/checkmark.png" 
+                            <img src="img/check.png" 
                             alt="experience-icon" 
                             class="icon">
                             <div>
@@ -157,7 +169,7 @@
                             </div>
                         </article>
                         <article>
-                            <img src="img/checkmark.png" 
+                            <img src="img/check.png" 
                             alt="experience-icon" 
                             class="icon">
                             <div>
@@ -166,12 +178,21 @@
                             </div>
                         </article>
                         <article>
-                            <img src="img/checkmark.png" 
+                            <img src="img/check.png" 
                             alt="experience-icon" 
                             class="icon">
                             <div>
                                 <h3>Adobe Applications</h3>
                                 <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="img/check.png" 
+                            alt="experience-icon" 
+                            class="icon">
+                            <div>
+                                <h3>Wordpress</h3>
+                                <p>Intermediate</p>
                             </div>
                         </article>
                     </div>
@@ -192,7 +213,7 @@
                 <div class="details-container color-container">
                 <div class="article-container">
                     <img 
-                    src="img/project-1.png" 
+                    src="img/project-3.png" 
                     alt="Project 1" 
                     class="project-img"
                     />
@@ -203,7 +224,7 @@
                     onclick="location.href='https://github.com'">
                         Github
                     </button>
-                    <button class="btn btn-color-2 project-btn"
+                    <button class="btn btn-color-1"
                     onclick="location.href='https://github.com'">
                         Live Demo
                     </button>
@@ -212,7 +233,7 @@
                 <div class="details-container color-container">
                 <div class="article-container">
                     <img 
-                    src="img/project-2.png" 
+                    src="img/project-3.png" 
                     alt="Project 2" 
                     class="project-img"
                     />
@@ -223,7 +244,7 @@
                     onclick="location.href='https://github.com'">
                         Github
                     </button>
-                    <button class="btn btn-color-2 project-btn"
+                    <button class="btn btn-color-1"
                     onclick="location.href='https://github.com'">
                         Live Demo
                     </button>
@@ -243,11 +264,31 @@
                     onclick="location.href='https://github.com'">
                         Github
                     </button>
-                    <button class="btn btn-color-2 project-btn"
+                    <button class="btn btn-color-1"
                     onclick="location.href='https://github.com'">
                         Live Demo
                     </button>
                 </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img 
+                        src="img/project-3.png" 
+                        alt="Project 4" 
+                        class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Four</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-1"
+                        onclick="location.href='https://github.com'">
+                            Live Demo
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -265,8 +306,8 @@
                 <img src="img/email.png" 
                 alt="email icon" 
                 class="icon contact-icon email-icon"/>
-                <p><a href="mailto:vesperxing02@gmail.com">
-                    vesperxing02@gmail.com
+                <p><a href="mailto:Imsgoath00@gmail.com">
+                    Imsgoath00@gmail.com
                 </a></p>
             </div>
             <div class="contact-info-container">
@@ -298,7 +339,10 @@
 
 
 
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
+    <!--===== MAIN JS =====-->
     <script src="js/main.js"></script>
 </body>
 </html>
