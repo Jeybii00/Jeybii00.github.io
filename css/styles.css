@@ -423,8 +423,6 @@ article .icon{
     display: flex;
     justify-self: center;
     border-radius: 2rem;
-    border:rgb(237, 234, 222) 0.1rem solid;
-    background: (250,250,250);
     margin: 2rem auto;
     padding: 0.5rem;
 }
@@ -435,6 +433,7 @@ article .icon{
     justify-content: center;
     gap: 0.5rem;
     margin: 1rem;
+    border:rgb(237, 234, 222) 0.1rem solid;
 }
 
 .contact-info-container p{
