@@ -425,6 +425,7 @@ article .icon{
     border-radius: 2rem;
     margin: 2rem auto;
     padding: 0.5rem;
+    border:rgb(237, 234, 222) 0.1rem solid;
 }
 
 .contact-info-container{
@@ -433,7 +434,6 @@ article .icon{
     justify-content: center;
     gap: 0.5rem;
     margin: 1rem;
-    border:rgb(237, 234, 222) 0.1rem solid;
 }
 
 .contact-info-container p{
