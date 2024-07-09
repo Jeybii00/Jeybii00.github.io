@@ -93,7 +93,7 @@
     }
 
     .skills-sub-title{
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
     .logo{
@@ -139,9 +139,6 @@
         content: "Web Designer";
     }
     21%,40%{
-        content: "Figma Designer";
-    }
-    41%,60%{
         content: "Frontend Developer";
     }
 }
