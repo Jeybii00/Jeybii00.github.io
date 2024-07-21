@@ -1,7 +1,5 @@
-
 /* FONT */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 /* GLOBAL STYLING  */
 
@@ -11,8 +9,7 @@
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
-
+    font-family: 'Quicksand', sans-serif;
 }
 
 html{
@@ -53,7 +50,7 @@ nav{
 a{
     color: #000;
     text-decoration: none;
-    text-decoration-color:#fff ;
+    text-decoration-color:#fff;
 }
 
 a:hover{
@@ -67,6 +64,7 @@ a:hover{
     font-size: 1.5rem;
     color: #2a86ff;
     font-weight: 600;
+    font-family: 'Quicksand';
 }
 
 .logo:hover{
@@ -210,7 +208,7 @@ section{
 }
 
 .animated-text span::before{
-    content: "Web Designer";
+    content: "Web Designer ";
     color: #2a86ff;
     animation:  words 20s infinite;
 }
@@ -222,7 +220,7 @@ section{
     height: 100%;
     background-color: #2a86ff;
     border-left: 2px solid #30353c;
-    right: -8px;
+    right: -12px;
     animation:  cursor .8s infinite;   
 }
 /* ANIMATION END HERE*/
@@ -258,12 +256,13 @@ section{
 }
 
 .btn{
-    font-weight: 600;
+    font-weight: bold;
     transition: all 300ms ease;
     padding: 1rem;
     width: 8rem;
     border-radius: 1rem;
     border: none;
+    font-family: 'Quicksand';
 }
 
 #btn__color-2{
@@ -326,6 +325,13 @@ section{
     position: absolute;
     right: -5rem;
     bottom: 2.3rem;
+}
+
+.back__to__top{
+    position: fixed;
+    right: 1rem;
+    bottom: 2.3rem;
+    transform: rotate(180deg);
 }
 
 .details-container{
@@ -432,7 +438,7 @@ article .icon{
 .contact-info-upper-container{
     display: flex;
     justify-self: center;
-    border-radius: 2rem;
+    border-radius: 2.5rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     background: (250,250,250);
