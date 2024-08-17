@@ -12,6 +12,10 @@
     #projects {
       height: fit-content;
     }
+
+    #myBtn{
+        display: none;
+    }
 }
 
 
@@ -58,6 +62,17 @@
 }
 
 @media screen and (max-width:600px){
+    body{
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
     #contact,
     footer{
         height: 40vh;
@@ -90,14 +105,15 @@
     .contact-info-container p,
     .nav-links li a{
         font-size: 1rem;
+        color: white;
     }
 
     .skills-sub-title{
-        font-size: 0.75rem;
+        font-size: 1.5rem;
     }
 
     .logo{
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .nav-links{
@@ -112,8 +128,9 @@
         justify-content: center;
     }
 
-    .section__text__p2{
-        font-size: 1.25rem;
+    .section__text__p2,
+    .section__text__p1{
+        font-size: 1.75rem;
     }
     
     .title{
