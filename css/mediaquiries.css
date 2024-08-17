@@ -20,9 +20,17 @@
 
 
 @media screen and (max-width:1200px){
+    body{
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
     #desktop-nav{
         display: none;
     }
+    
     #hamburger-nav{
         display: flex;
     }
