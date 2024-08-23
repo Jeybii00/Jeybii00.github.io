@@ -18,5 +18,5 @@ const sr = ScrollReveal({
 });
 
 sr.reveal('.contact-info-upper-container',{});
-sr.reveal('.project-img, .details-container',{delay: 400}); 
+sr.reveal('.skills-details-container, .details-container',{delay: 400}); 
 sr.reveal('.section__text, .text-container, .arrow',{delay: 400}); 
