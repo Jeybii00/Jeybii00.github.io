@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/mediaquiries.css">
 </head>
-<body>
+<body>  
     <nav id="desktop-nav">
-        <div class="logo">Bryan</div>
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -22,7 +21,6 @@
     </nav>
 
     <nav id="hamburger-nav">
-        <div class="logo">Bryan</div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -39,9 +37,6 @@
     </nav>
 
     <section id="profile">
-        <div class="section__pic-container">
-            <img src="img/avatar.png" class="profile__image" alt="Bryan-profile-image">
-        </div>
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title">Bryan,</h1>
@@ -71,35 +66,34 @@
         <h1 class="title">About Me</h1>
         <div class="section-container">
             <div class="section__pic-container">
-                <img src="img/avatar.png" 
+                <img src="img/about-pic.jpg" 
                     alt="about-picture" 
-                    class="about-pic"/>
+                    class="about-pic" id="about__pic__2"/>
             </div>
             <div class="about-details-container">
                 <div class="about-containers">
                     <div class="details-container">
                         <img src="img/experience.png" 
                         alt="experience-picture"
-                        class="icon">
+                        id="icon">
                         <h3 class="skills-sub-title">Experience</h3>
-                        <p id="skills__description__title">2+ year<br /> Web Designer</p>
+                        <p id="skills__description__title"><span>2+ Year</span><br/>Web Designer</p><br/>
+                        <p id="skills__description__title"><span>2+ Year</span><br/>Frontend Developer</p>
                     </div>
                     <div class="details-container">
                         <img src="img/education-1.png" 
                         alt="experience-picture"
-                        class="icon">
+                        id="icon">
                         <h3 class="skills-sub-title">Education</h3>
                         <p id="skills__description__title">BS Information Technology<br />Bachelors Degree</p>
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>
-                        Bonjour! As a junior web designer and frontend developer, 
-                        I am eager to contribute my creativity and technical skills to 
-                        crafting engaging and responsive websites. With a strong foundation 
-                        in HTML, CSS, and JavaScript. I am dedicated to learning and applying the latest trends in web design and frontend development. 
-                        With over 1 year of experience, I specialize in translating creative concepts into functional designs. 
-                        I look forward to growing and thriving in this dynamic field!
+                    <span class="about__subtext">yow, I'm Bryan&#128075;</span><br/><br/>
+                    <p class="about__subtext__1">
+                        I'm a inspiring Web Designer and a Frontend Developer, and a optimist.
+                        I currently polishing and looking for a personal growth to improve my knowledge and skills
+                        in Web Designing and Frontend Development career path.                    
                     </p>
                 </div>
             </div>
@@ -202,99 +196,41 @@
         <img src="img/arrow.png" 
         alt="arrow-icon" 
         class="icon arrow" 
-        onclick="location.href='#skills'">
+        onclick="location.href='#projects'">
     </section>
 
     <section id="projects">
         <p class="section__text__p1">Browse My</p>
         <h1 class="title">Projects</h1>
         <div class="skills-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                        <div class="article-container">
-                        <img 
-                        src="img/project-1.png" 
-                        alt="Project 1" 
-                        class="project-img"/>
-                        </div>
-                        <h2 class="skills-sub-title project-title">Cups and Coffee Website &#8212; Landing Page</h2>
-                        <div class="btn-container">
-                            <button class="btn btn-color-2 project-btn" id="btn__color-2"
-                            onclick="location.href='https://github.com/Jeybii00/Projects/tree/main/Cups%26Coffee'">
-                                Github
-                            </button>
-                            <button class="btn btn-color-1" 
-                            onclick="location.href='https://github.com/Jeybii00/Projects/tree/main/Cups%26Coffee/Samples'">
-                                View Project
-                            </button>
-                        </div>                  
+            <div class="container">
+                <div class="cards">
+                  <div class="card card-one">
+                    <h4 class="card-title">Cups and Coffee Website &#8212; Landing Page</h4>
+                    <p class="date">May 25, 2021</p>
+                  </div>
+                  
+                  <div class="card card-two">
+                    <h4 class="card-title">Sports Gear E-Commerce Website &#8212; Landing Page</h4>
+                    <p class="date">May 26, 2021</p>
+                  </div>
+                  
+                  <div class="card card-three">
+                    <h4 class="card-title">Plants Ordering Website &#8212; Landing Page</h4>
+                    <p class="date">May 27, 2021</p>
+                  </div>
+                  
+                  <div class="card card-four">
+                    <h4 class="card-title">Consumer's Portal &#8212; Web-based Website</h4>
+                    <p class="date">May 28, 2021</p>
+                  </div>
                 </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img 
-                        src="img/project-2.png"     
-                        alt="Project 2" 
-                        class="project-img"
-                        />
-                    </div>
-                    <h2 class="skills-sub-title project-title">Sports Gear E-Commerce Website &#8212; Landing Page</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" id="btn__color-2"
-                        onclick="location.href='https://github.com/Jeybii00/Projects/tree/main/Sporting%20Goods'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-1"
-                        onclick="location.href='https://github.com/Jeybii00/Projects/tree/main/Sporting%20Goods/Samples'">
-                            View Project
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                        <div class="article-container">
-                            <img 
-                            src="img/project-4.png" 
-                            alt="Project 4" 
-                            class="project-img"
-                            />
-                        </div>
-                        <h2 class="skills-sub-title project-title">Plants Ordering Website &#8212; Landing Page</h2>
-                        <div class="btn-container">
-                            <button class="btn btn-color-2 project-btn" id="btn__color-2"
-                            onclick="location.href='https://github.com/Jeybii00/Projects/tree/main/Plants'">
-                                Github
-                            </button>
-                            <button class="btn btn-color-1"
-                            onclick="location.href='https://github.com/Jeybii00/Projects/tree/main/Plants/Samples'">
-                                View Project
-                            </button>
-                        </div>
-                </div>
-                <div class="details-container color-container">
-                        <div class="article-container">
-                            <img 
-                            src="img/project-5.png" 
-                            alt="Project 4" 
-                            class="project-img"
-                            />
-                        </div>
-                        <h2 class="skills-sub-title project-title">Consumer's Portal &#8212; Web-based Website</h2>
-                        <div class="btn-container">
-                            <button class="btn btn-color-2 project-btn" id="btn__color-2"
-                            onclick="location.href='https://github.com/Jeybii00/Projects/tree/main/Portal'">
-                                Github
-                            </button>
-                            <button class="btn btn-color-1"
-                            onclick="location.href='https://github.com/Jeybii00/Projects/tree/main/Portal/Samples'">
-                                View Project
-                            </button>
-                        </div>
-                </div>
-            </div>
+              </div>
         </div>
         <img src="img/arrow.png" 
         alt="arrow-icon" 
         class="icon arrow" 
-        onclick="location.href='#projects'">
+        onclick="location.href='#contact'">
     </section>
 
     <section id="contact">
@@ -335,7 +271,7 @@
     </footer>
 
 
-    <!--===== SCROLL REVEAL     =====-->
+    <!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
 
