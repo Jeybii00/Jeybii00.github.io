@@ -25,7 +25,6 @@ p{
     font-size: 1.5rem;
 }
 
-
 /* TRANSITION */
 
 a, 
@@ -57,7 +56,6 @@ a{
     text-shadow: 5px 5px 10px rgba(254, 251, 254, 0.4);
     color: #fefbfe;
     font-size: 2rem;
-
 }
 
 a:hover{
@@ -65,17 +63,6 @@ a:hover{
     text-decoration: underline;
     text-underline-offset: 1rem;
     text-decoration-color: rgb(42, 134, 255);
-}
-
-.logo{
-    font-size: 2.5rem;
-    color: #2a86ff;
-    font-weight: 600;
-    text-shadow: 5px 5px 10px rgba(79, 37, 158, 0.945);
-}
-
-.logo:hover{
-    cursor: pointer;
 }
 
 /* HAMBURGER NAVIGATION */
@@ -158,11 +145,6 @@ a:hover{
 }
 
 /* SECTIONS STYLE*/
-.profile__image{
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    box-shadow: 4px 4px 2px rgba(145, 145, 145, 0.4);
-}
-
 section{
     padding-top: 4vh;
     height: 96vh;
@@ -252,10 +234,16 @@ section{
     cursor: pointer;
     height: 2rem;
     padding: 5px;
-    margin-top: 1rem;
-    background-blend-mode: screen;
+    margin-top: .75rem;
+    mix-blend-mode: hard-light;
 }
 
+#icon{
+    cursor: default;
+    height: 3rem;
+    padding: 5px;
+    mix-blend-mode: hard-light;
+}
 
 /* BUTTONS STYLE*/
 
@@ -308,9 +296,20 @@ section{
 }
 
 /* ABOUT SECTION */
-
 #about{
     position: relative;
+}
+
+.about__subtext{
+    font-size: 2rem;
+    font-weight: lighter;
+    letter-spacing: 0.1rem;
+    color: #fff;
+}
+
+.about__subtext__1{
+    font-family: sans-serif;
+    font-size: 1rem;
 }
 
 .about-containers{
@@ -332,19 +331,13 @@ section{
 .about-pic{
     border-radius: 2rem;
     box-shadow: 4px 4px 2px rgba(145, 145, 145, 0.4);
+    filter: sepia(50%);
 }
 
 .arrow{
     position: absolute;
     right: -5rem;
     bottom: 2.3rem;
-}
-
-.back__to__top{
-    position: fixed;
-    right: 1rem;
-    bottom: 2.3rem;
-    transform: rotate(180deg);
 }
 
 .details-container{
@@ -374,13 +367,20 @@ section{
     color: #fff;
     font-weight: 600;
     font-size: 1.75rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     letter-spacing: .2rem;
     text-align: center;
 }
 
 #skills__description__title{
     color: rgba(190, 190, 190, 0.507);
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: .2rem;
+}
+
+#skills__description__title span{
+    color: rgba(59, 199, 94, 0.575);
     font-weight: 600;
     font-size: 1rem;
     letter-spacing: .2rem;
@@ -435,19 +435,11 @@ article .icon{
     transition: 1s ease;
     box-shadow: 2px 2px 4px rgba(145, 145, 145, 0.4);
 }
-
-.project-img:hover{
-    -webkit-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
-    transition: 1s ease;
-    cursor: pointer;
-}
   
 .project-title{
     margin: 1rem;
     color: rgb(148, 148, 148);
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
   
 .project-btn{
@@ -455,6 +447,62 @@ article .icon{
     border-color: rgb(163, 163, 163);
 }
 
+.container {
+    height: 100%;
+    width: 100%;
+    padding: 1rem 0;
+    display: grid;
+    place-content: center;
+    
+    .cards {    
+      display: grid;
+      gap: 1rem;
+      pointer-events: none;
+      margin: 2rem auto;
+    }
+    
+    .card {
+      max-width: 30rem;
+      color: #ffffffda;
+      padding: 1.5rem;
+      background-color: #202022;
+      pointer-events: auto;
+      transform: scale(1);
+      opacity: 1;
+      transition: all 150ms ease-in-out; 
+      display: flex;
+      flex-direction: column;
+      backdrop-filter: blur(10px) saturate(89%);
+      -webkit-backdrop-filter: blur(10px) saturate(89%);
+      background-color: rgba(17, 25, 40, 0.49);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+
+      .card-title {
+        position: relative;
+        letter-spacing: 0.2rem;
+      }
+      
+      .date {
+        color: #bb86fc;
+        font-size: 0.85rem;
+        margin-bottom: 1.5rem;
+      }
+      
+      .description {
+        font-size: 0.9rem;
+      }
+    }
+  }
+  
+  .cards:hover > .card:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 10;
+  }
+  .cards:hover > .card:not(:hover) {
+    opacity: 0.5;
+  }
 /* CONTACT SECTION*/
 
 #contact{
@@ -462,6 +510,7 @@ article .icon{
     justify-content: center;
     flex-direction: column;
     height: 70vh;
+    margin-top: 5rem;
 }
 
 .contact-info-upper-container{
