@@ -1,4 +1,11 @@
 @media screen and (max-width:1400px){
+    body{
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     #profile{
         height: 83vh;
         margin-bottom: 6rem;
@@ -16,6 +23,10 @@
     #myBtn{
         display: none;
     }
+
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 
@@ -30,9 +41,9 @@
     #desktop-nav{
         display: none;
     }
-    
     #hamburger-nav{
         display: flex;
+        margin-left: 50%;
     }
 
     #skills, 
@@ -61,12 +72,14 @@
     .section__pic-container{
         width: 275px;
         height: 275px;
-        margin: 0 auto 2rem;
+        margin: 0 auto 5rem;
     }
 
     .about-containers{
         margin-top: 0;
     }
+
+
 }
 
 @media screen and (max-width:600px){
@@ -89,6 +102,7 @@
     #profile{
         height: 83vh;
         margin-bottom: 0;
+        margin-top: 5rem;
     }
 
     article{
@@ -103,7 +117,7 @@
     .about-containers,
     .contact-info-upper-container, 
     .btn-container{
-        flex-wrap:wrap ;
+        flex-wrap:wrap;
     }
 
     .contact-info-container{
@@ -117,7 +131,7 @@
     }
 
     .skills-sub-title{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .logo{
@@ -134,6 +148,12 @@
         width: auto;
         height: 46vw;
         justify-content: center;
+        margin: 3rem auto 5rem;
+    }
+
+    .section__pic-container img{
+        width: 275px;
+        height: 230px;
     }
 
     .section__text__p2,
@@ -148,6 +168,15 @@
     .text-container{
         text-align: justify;
     }
+
+    .card-title{
+        font-size: 1rem;
+    }
+
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 }
 
 
