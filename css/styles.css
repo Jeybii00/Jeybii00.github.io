@@ -459,6 +459,7 @@ article .icon{
       gap: 1rem;
       pointer-events: none;
       margin: 2rem auto;
+      cursor: pointer;
     }
     
     .card {
