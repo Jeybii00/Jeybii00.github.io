@@ -111,7 +111,7 @@
 
     footer nav{
         height: fit-content;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
 
     .about-containers,
@@ -124,10 +124,14 @@
         margin: 0;
     }
 
-    .contact-info-container p,
     .nav-links li a{
         font-size: 1rem;
         color: white;
+    }
+
+    .contact-info-container p{
+        font-size:1.75rem;
+        color:white;
     }
 
     .skills-sub-title{
