@@ -482,6 +482,7 @@ article .icon{
       .card-title {
         position: relative;
         letter-spacing: 0.2rem;
+        font-size: 1rem;
       }
       
       .date {
@@ -555,3 +556,4 @@ footer{
 footer p{
     text-align: center;
 }
+
