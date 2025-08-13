@@ -486,8 +486,6 @@ article .icon{
       
       .date {
         color: #bb86fc;
-        font-size: 0.85rem;
-        margin-bottom: 1.5rem;
       }
       
       .description {
@@ -555,5 +553,6 @@ footer{
 footer p{
     text-align: center;
 }
+
 
 
